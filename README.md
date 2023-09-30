@@ -13,8 +13,6 @@
 | [get_next_line](./1-get_next_line) |
 | [netwhat](./1-netwhat) |
 
-    EXAM RANK 01
-
 | -------------------- LEVEL 2 -------------------- |
 | :-----------------: |
 | [cub3d](./2-cub3d) |
