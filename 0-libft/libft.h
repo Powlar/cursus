@@ -6,7 +6,7 @@
 /*   By: cedmulle <cedmulle@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/30 15:32:36 by cedmulle          #+#    #+#             */
-/*   Updated: 2023/10/01 18:13:45 by cedmulle         ###   ########.fr       */
+/*   Updated: 2023/10/01 18:24:26 by cedmulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
+void	ft_strdel(char **as);
 void	*ft_memalloc(size_t size);
 void	ft_memdel(void **ap);
 void	ft_putchar(char c);

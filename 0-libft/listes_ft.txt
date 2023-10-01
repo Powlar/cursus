@@ -32,7 +32,7 @@ ft_tolower		√
 ft_memalloc		√
 ft_memdel		√
 ft_strnew		√
-ft_strdel		
+ft_strdel		√
 ft_strclr		
 ft_striter		
 ft_striteri		
