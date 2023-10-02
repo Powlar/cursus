@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsplit.c                                      :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cedmulle <cedmulle@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/01 12:23:37 by cedmulle          #+#    #+#             */
-/*   Updated: 2023/10/01 12:44:27 by cedmulle         ###   ########.fr       */
+/*   Updated: 2023/10/02 10:26:08 by cedmulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ static void	fill_result(char **result, char const *s, char c)
 	}
 }
 
-char	**ft_strsplit(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
 	int		words;
 	char	**result;

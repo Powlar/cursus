@@ -5,54 +5,72 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: cedmulle <cedmulle@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/01 12:46:00 by cedmulle          #+#    #+#             */
-/*   Updated: 2023/10/01 12:59:13 by cedmulle         ###   ########.fr       */
+/*   Created: 2023/10/02 10:26:23 by cedmulle          #+#    #+#             */
+/*   Updated: 2023/10/02 10:51:02 by cedmulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	white_start(char const *s)
+static int	is_sep(const char c, const char *str)
 {
 	int	i;
+	int	count;
+
+	count = 0;
+	i = 0;
+	while (str[i])
+	{
+		if (str[i] == c)
+			count++;
+		i++;
+	}
+	return (count);
+}
+
+static	size_t	trimmed_len(const char *str, const char *sep)
+{
+	int		i;
+	int		k;
+	size_t	len;
+
+	len = 0;
+	i = 0;
+	while (str[i])
+	{
+		k = 0;
+		while (sep[k])
+		{
+			if (str[i] != sep[k])
+				len++;
+			k++;
+		}
+		i++;
+	}
+	return (len);
+}
+
+char	*ft_strtrim(char const *s1, char const *set)
+{
+	int		i;
+	int		k;
+	size_t	len;
+	char	*dest;
 
 	i = 0;
-	while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
-		i++;
-	return (i);
-}
-
-static int	white_end(char const *s)
-{
-	int	i;
-
-	i = ft_strlen(s) - 1;
-	while (s[i] == ' ' || s[i] == '\n' || s[i] == '\t')
-		i--;
-	i++;
-	return (i);
-}
-
-char	*ft_strtrim(char const *s)
-{
-	int		len;
-	char	*str_trimmed;
-
-	if (s)
+	k = 0;
+	len = trimmed_len(s1, set);
+	dest = (char *)malloc(sizeof(char) * len + 1);
+	if (!dest)
+		return (NULL);
+	while (s1[i])
 	{
-		len = (white_end(s) - white_start(s));
-		if (len <= 0)
+		if (is_sep(s1[i], set) == 0)
 		{
-			str_trimmed = ft_strnew(1);
-			return (str_trimmed);
+			dest[k] = s1[i];
+			k++;
 		}
-		else
-			str_trimmed = ft_strnew(len);
-		if (str_trimmed)
-		{
-			str_trimmed = ft_strsub(s, white_start(s), len);
-			return (str_trimmed);
-		}
+		i++;
 	}
-	return (NULL);
+	return (dest);
 }

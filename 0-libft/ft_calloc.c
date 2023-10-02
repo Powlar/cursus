@@ -1,24 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memalloc.c                                      :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cedmulle <cedmulle@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/01 18:06:14 by cedmulle          #+#    #+#             */
-/*   Updated: 2023/10/01 18:08:42 by cedmulle         ###   ########.fr       */
+/*   Created: 2023/10/02 10:51:39 by cedmulle          #+#    #+#             */
+/*   Updated: 2023/10/02 11:00:18 by cedmulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memalloc(size_t size)
+void	*ft_calloc(size_t count, size_t size)
 {
-	unsigned char	*ptr;
+	size_t	full_size;
+	void	*ptr;
 
-	ptr = malloc(size);
+	full_size = count * size;
+	ptr = malloc(full_size);
 	if (!ptr)
 		return (NULL);
-	ft_memset(ptr, 0, size);
+	ft_bzero(ptr, full_size);
 	return (ptr);
 }

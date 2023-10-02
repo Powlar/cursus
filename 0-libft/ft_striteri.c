@@ -1,34 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cedmulle <cedmulle@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/30 16:08:14 by cedmulle          #+#    #+#             */
-/*   Updated: 2023/10/01 10:42:25 by cedmulle         ###   ########.fr       */
+/*   Created: 2023/10/02 12:07:45 by cedmulle          #+#    #+#             */
+/*   Updated: 2023/10/02 12:19:06 by cedmulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strstr(const char *haystack, const char *needle)
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	size_t	i;
-	size_t	j;
+	unsigned int	i;
 
 	i = 0;
-	j = 0;
-	if (needle[i] == '\0')
-		return (haystack);
-	while (haystack[i])
+	while (s[i])
 	{
-		j = 0;
-		while (needle[j] && (haystack[i + j] == needle[j]))
-			j++;
-		if (needle[j] == '\0')
-			return (haystack + i);
+		(*f)(i, &s[i]);
 		i++;
 	}
-	return (NULL);
 }

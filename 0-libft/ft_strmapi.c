@@ -1,32 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cedmulle <cedmulle@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/30 16:05:30 by cedmulle          #+#    #+#             */
-/*   Updated: 2023/10/01 16:41:10 by cedmulle         ###   ########.fr       */
+/*   Created: 2023/10/02 11:34:55 by cedmulle          #+#    #+#             */
+/*   Updated: 2023/10/02 12:04:39 by cedmulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strcat(char *s1, const char *s2)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	int	i;
-	int	j;
+	unsigned int	i;
+	char			*dest;
 
-	i = 0;
-	j = 0;
-	while (s1[i])
-		i++;
-	while (s2[j])
+	if (!s)
+		return (ft_strdup(""));
+	if (!f)
+		return (ft_strdup(s));
+	dest = ft_strdup(s);
+	if (!dest)
+		return (NULL);
+	while (s[i])
 	{
-		s1[i] = s2[j];
+		dest[i] = f(i, s[i]);
 		i++;
-		j++;
 	}
-	s1[i] = '\0';
-	return (s1);
+	return (dest);
 }

@@ -1,34 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnr.c                                        :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cedmulle <cedmulle@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/30 15:38:21 by cedmulle          #+#    #+#             */
-/*   Updated: 2023/09/30 15:48:50 by cedmulle         ###   ########.fr       */
+/*   Created: 2023/10/01 13:13:49 by cedmulle          #+#    #+#             */
+/*   Updated: 2023/10/02 11:01:43 by cedmulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr(int n)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	if (n == 0)
-		ft_putchar('0');
-	else if (n == -2147483648)
+	char	*dst;
+	size_t	i;
+
+	if (!s)
+		return (NULL);
+	if ((size_t)start > ft_strlen(s))
+		return (ft_strdup(""));
+	dst = malloc(sizeof(char) * (len + 1));
+	if (!dst)
+		return (NULL);
+	i = 0;
+	while (i < len)
 	{
-		ft_putchar('-');
-		ft_putchar('2');
-		n = 147483648;
-		ft_putnbr(n);
+		dst[i] = *(s + start + i);
+		i++;
 	}
-	else if (n < 0)
-	{
-		ft_putchar('-');
-		n = -n;
-	}
-	if (n >= 10)
-		ft_putnbr(n / 10);
-	ft_putchar(n % 10 + '0');
+	dst[i] = '\0';
+	return (dst);
 }
