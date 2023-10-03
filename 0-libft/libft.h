@@ -6,20 +6,21 @@
 /*   By: cedmulle <cedmulle@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/30 15:32:36 by cedmulle          #+#    #+#             */
-/*   Updated: 2023/10/02 12:24:23 by cedmulle         ###   ########.fr       */
+/*   Updated: 2023/10/03 14:54:04 by cedmulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*****************************************************************************/
+/* 									Definitions								 */
+/*****************************************************************************/
 #ifndef LIBFT_H
 # define LIBFT_H
-
 /*****************************************************************************/
 /* 							Libraries std necessaires						 */
 /*****************************************************************************/
 # include <unistd.h>
 # include <string.h>
 # include <stdlib.h>
-
 /*****************************************************************************/
 /* 								Fonctions seules							 */
 /*****************************************************************************/
@@ -40,6 +41,7 @@ int		ft_lower(int c);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
+void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 int		ft_atoi(const char *str);
@@ -58,5 +60,9 @@ char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char *));
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 
 #endif
