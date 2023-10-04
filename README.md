@@ -22,11 +22,7 @@ LEVEL 2
 - [ ] cub3d
 - [ ] ft\_server
 
-<div style="text-align: right">
-- - -
-EXAM RANK 02
-- - -
-</div>
+<div style="text-align: right">EXAM RANK 02</div>
 
 ```
 LEVEL 3
