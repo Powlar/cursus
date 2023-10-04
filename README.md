@@ -4,7 +4,7 @@
 ## Common Core
 
 	LEVEL 0
-[libft](./0-libft)
+[libft](./libft)
 
 
 	LEVEL 1
