@@ -10,7 +10,6 @@ LEVEL 0
 ```
 LEVEL 1
 ```
-
 - [ ] ft\_printf
 - [ ] get\_next\_line
 - [ ] netwhat
@@ -18,65 +17,38 @@ LEVEL 1
 ```
 LEVEL 2
 ```
-
 - [ ] cub3d
 - [ ] ft\_server
-
-<div style="text-align: right">EXAM RANK 02</div>
+- [ ] **EXAM RANK 02**
 
 ```
 LEVEL 3
 ```
-
 - [ ] ft\_services
 - [ ] libasm
 - [ ] minishell
 - [ ] push\_swap
-
-- - -
-
-EXAM RANK 03
-
-- - -
+- [ ] **EXAM RANK 03**
 
 ```
 LEVEL 4
 ```
-
 - [ ] cpp
 - [ ] philosophers
-
-- - -
-
-EXAM RANK 04
-
-- - -
+- [ ] **EXAM RANK 04**
 
 ```
 LEVEL 5
 ```
-
 - [ ] ft\_containers
 - [ ] ft\_irc
 - [ ] webserv
-
-- - -
-
-EXAM RANK 05
-
-- - -
+- [ ] **EXAM RANK 05**
 
 ```
 LEVEL 06
 ```
-
 - [ ] ft\_transcendence
-
-- - -
-
-EXAM RANK 06
-
-- - -
-
+- [ ] **EXAM RANK 06**
 <br>
 <br>
