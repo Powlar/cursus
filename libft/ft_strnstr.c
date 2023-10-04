@@ -6,7 +6,7 @@
 /*   By: cedmulle <cedmulle@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/01 10:41:30 by cedmulle          #+#    #+#             */
-/*   Updated: 2023/10/04 11:18:19 by cedmulle         ###   ########.fr       */
+/*   Updated: 2023/10/04 11:45:18 by cedmulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@
 /*   Si échec :                                                               */
 /*      Aucun (la fonction ne renvoie rien en cas d'échec)                    */
 /*                                                                            */
-/* ************************************************************************** */
+/* *****************************************************************   by.XVI */
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	i;

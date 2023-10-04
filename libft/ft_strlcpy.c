@@ -6,7 +6,7 @@
 /*   By: cedmulle <cedmulle@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 09:51:29 by cedmulle          #+#    #+#             */
-/*   Updated: 2023/10/04 11:14:54 by cedmulle         ###   ########.fr       */
+/*   Updated: 2023/10/04 11:45:02 by cedmulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@
 /*   Si échec :                                                               */
 /*      Aucun (la fonction ne renvoie rien en cas d'échec)                    */
 /*                                                                            */
-/* ************************************************************************** */
+/* *****************************************************************   by.XVI */
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;

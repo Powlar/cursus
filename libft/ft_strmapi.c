@@ -6,7 +6,7 @@
 /*   By: cedmulle <cedmulle@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 11:34:55 by cedmulle          #+#    #+#             */
-/*   Updated: 2023/10/04 11:16:34 by cedmulle         ###   ########.fr       */
+/*   Updated: 2023/10/04 11:45:12 by cedmulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@
 /*   Si échec :                                                               */
 /*      Si l'allocation de mémoire échoue, la fonction renvoie NULL.          */
 /*                                                                            */
-/* ************************************************************************** */
+/* *****************************************************************   by.XVI */
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	unsigned int	i;

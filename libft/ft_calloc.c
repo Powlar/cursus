@@ -6,7 +6,7 @@
 /*   By: cedmulle <cedmulle@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 10:51:39 by cedmulle          #+#    #+#             */
-/*   Updated: 2023/10/04 10:48:22 by cedmulle         ###   ########.fr       */
+/*   Updated: 2023/10/04 11:43:30 by cedmulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@
 /*   Si échec :                                                               */
 /*      La fonction renvoie NULL si l'allocation échoue.                      */
 /*                                                                            */
-/* ************************************************************************** */
+/* *****************************************************************   by.XVI */
 void	*ft_calloc(size_t count, size_t size)
 {
 	size_t	full_size;

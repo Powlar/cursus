@@ -6,7 +6,7 @@
 /*   By: cedmulle <cedmulle@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 12:07:45 by cedmulle          #+#    #+#             */
-/*   Updated: 2023/10/04 11:09:45 by cedmulle         ###   ########.fr       */
+/*   Updated: 2023/10/04 11:44:51 by cedmulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@
 /*   Si échec :                                                               */
 /*      Aucun (la fonction ne renvoie rien en cas d'échec)                    */
 /*                                                                            */
-/* ************************************************************************** */
+/* *****************************************************************   by.XVI */
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	unsigned int	i;

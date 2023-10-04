@@ -6,7 +6,7 @@
 /*   By: cedmulle <cedmulle@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/01 13:13:49 by cedmulle          #+#    #+#             */
-/*   Updated: 2023/10/04 11:20:56 by cedmulle         ###   ########.fr       */
+/*   Updated: 2023/10/04 11:45:29 by cedmulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@
 /*   Si échec :                                                               */
 /*      La fonction renvoie NULL si l'allocation de mémoire échoue.           */
 /*                                                                            */
-/* ************************************************************************** */
+/* *****************************************************************   by.XVI */
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*dst;

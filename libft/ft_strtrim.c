@@ -6,7 +6,7 @@
 /*   By: cedmulle <cedmulle@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 10:26:23 by cedmulle          #+#    #+#             */
-/*   Updated: 2023/10/04 11:19:37 by cedmulle         ###   ########.fr       */
+/*   Updated: 2023/10/04 11:45:26 by cedmulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@
 /*   Si échec :                                                               */
 /*      La fonction renvoie NULL si l'allocation de mémoire échoue.           */
 /*                                                                            */
-/* ************************************************************************** */
+/* *****************************************************************   by.XVI */
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	size_t	i;

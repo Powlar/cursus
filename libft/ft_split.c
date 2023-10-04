@@ -6,7 +6,7 @@
 /*   By: cedmulle <cedmulle@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/01 12:23:37 by cedmulle          #+#    #+#             */
-/*   Updated: 2023/10/04 11:07:27 by cedmulle         ###   ########.fr       */
+/*   Updated: 2023/10/04 11:44:40 by cedmulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@
 /*      - La fonction renvoie NULL si l'allocation mémoire échoue ou si 's'   */
 /*        est NULL.                                                           */
 /*                                                                            */
-/* ************************************************************************** */
+/* *****************************************************************   by.XVI */
 static int	count_words(const char *str, char c)
 {
 	int	i;

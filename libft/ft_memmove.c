@@ -6,7 +6,7 @@
 /*   By: cedmulle <cedmulle@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/01 17:22:57 by cedmulle          #+#    #+#             */
-/*   Updated: 2023/10/04 10:56:56 by cedmulle         ###   ########.fr       */
+/*   Updated: 2023/10/04 11:44:16 by cedmulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@
 /*   Si échec :                                                               */
 /*      - La fonction renvoie NULL si dst ou src est NULL.                    */
 /*                                                                            */
-/* ************************************************************************** */
+/* *****************************************************************   by.XVI */
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	unsigned char	*d;

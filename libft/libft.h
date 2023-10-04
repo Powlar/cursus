@@ -6,7 +6,7 @@
 /*   By: cedmulle <cedmulle@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/30 15:32:36 by cedmulle          #+#    #+#             */
-/*   Updated: 2023/10/04 11:32:07 by cedmulle         ###   ########.fr       */
+/*   Updated: 2023/10/04 11:45:50 by cedmulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ void	ft_putnbr_fd(int n, int fd);
 
 #endif
 
-/* ************************************************************************** */
+/* *****************************************************************   by.XVI */
 /*                                                                            */
 /*   Nom de la Ft : ft_atoi                                                   */
 /*   Fonctionnement : Convertit une chaîne de caractères en int.              */
@@ -259,4 +259,4 @@ void	ft_putnbr_fd(int n, int fd);
 /*   Fonctionnement : Convertit un caractère majuscule en caractère minuscule */
 /*   si c'est une lettre majuscule.                                           */
 /*                                                                            */
-/* ************************************************************************** */
+/* *****************************************************************   by.XVI */

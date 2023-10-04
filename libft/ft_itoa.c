@@ -6,7 +6,7 @@
 /*   By: cedmulle <cedmulle@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 11:01:59 by cedmulle          #+#    #+#             */
-/*   Updated: 2023/10/04 10:53:21 by cedmulle         ###   ########.fr       */
+/*   Updated: 2023/10/04 11:43:59 by cedmulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@
 /*   Si échec :                                                               */
 /*      La fonction renvoie NULL en cas d'échec d'allocation mémoire.         */
 /*                                                                            */
-/* ************************************************************************** */
+/* *****************************************************************   by.XVI */
 static unsigned int	ft_intlen(int number)
 {
 	unsigned int	len;
