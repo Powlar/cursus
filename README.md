@@ -23,9 +23,7 @@ LEVEL 2
 - [ ] ft\_server
 
 - - -
-
 EXAM RANK 02
-
 - - -
 
 ```
