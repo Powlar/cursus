@@ -8,47 +8,47 @@
 
 
 	LEVEL 1
-[ft_printf](./1-ft_printf)
+ft_printf
 
-[get_next_line](./1-get_next_line)
+get_next_line
 
-[netwhat](./1-netwhat)
+netwhat
 
 	LEVEL 2
-[cub3d](./2-cub3d)
+cub3d
 
-[ft_server](./2-ft_server)
+ft_server
 
 #### EXAM RANK 02
 
 	LEVEL 3
-[ft_services](./3-ft_services)
+ft_services
 
-[libasm](./3-libasm)
+libasm
 
-[minishell](./3.minishell)
+minishell
 
-[push_swap](./3-push_swap)
+push_swap
 
 #### EXAM RANK 03
 
 	LEVEL 4
-[cpp](./4-cpp)
+cpp
 
-[philosophers](./4-philosophers)
+philosophers
 
 #### EXAM RANK 04
 
 	LEVEL 5
-[ft_containers](./5-ft_containers)
+ft_containers
 
-[ft_irc](./5-ft_irc)
+ft_irc
 
-[webserv](./5-webserv)
+webserv
 
 #### EXAM RANK 05
 
 	LEVEL 06
-[ft_transcendence](./6-ft_transcendence) 
+ft_transcendence 
 
 #### EXAM RANK 06
