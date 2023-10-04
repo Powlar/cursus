@@ -1,57 +1,87 @@
-
 # CURSUS at 42 Lausanne
 
 ## Common Core
 
-	LEVEL 0
+```
+LEVEL 0
+```
+
 [libft](./libft)
 
-	LEVEL 1
-  - ft_printf
-  - get_next_line
-  - netwhat
-</>
+```
+LEVEL 1
+```
 
+* ft\_printf
+* get\_next\_line
+* netwhat
 
-	LEVEL 2
-  - cub3d
-  - ft_server
+```
+LEVEL 2
+```
 
-<p align="center">
+* cub3d
+* ft\_server
+
+- - -
+
 EXAM RANK 02
-</p>
 
-	LEVEL 3
-  - ft_services
+- - -
 
-  - libasm
-  - minishell
-  - push_swap
+```
+LEVEL 3
+```
 
-<p align="center">
+* ft\_services
+* libasm
+* minishell
+* push\_swap
+
+- - -
+
 EXAM RANK 03
-</p>
 
-	LEVEL 4
-  - cpp
-  - philosophers
+- - -
 
-<p align="center">
+```
+LEVEL 4
+```
+
+* cpp
+* philosophers
+
+- - -
+
 EXAM RANK 04
-</p>
 
-	LEVEL 5
-  - ft_containers
-  - ft_irc
-  - webserv
+- - -
 
-<p align="center">
+```
+LEVEL 5
+```
+
+* ft\_containers
+* ft\_irc
+* webserv
+
+- - -
+
 EXAM RANK 05
-</p>
 
-	LEVEL 06
-  - ft_transcendence 
+- - -
 
-<p align="center">
+```
+LEVEL 06
+```
+
+* ft\_transcendence
+
+- - -
+
 EXAM RANK 06
-</p>
+
+- - -
+
+<br>
+<br>
