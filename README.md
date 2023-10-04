@@ -4,9 +4,8 @@
 
 ```
 LEVEL 0
-
-- [x] [libft](./libft)
 ```
+- [x] [libft](./libft)
 
 ```
 LEVEL 1
