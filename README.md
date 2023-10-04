@@ -8,54 +8,48 @@
 
 
 	LEVEL 1
-ft_printf
-
-get_next_line
-
-netwhat
+  - ft_printf
+  - get_next_line
+  - netwhat
 
 	LEVEL 2
-cub3d
+  - cub3d
+  - ft_server
 
-ft_server
 <p align="center">
 EXAM RANK 02
 </p>
 
 	LEVEL 3
-ft_services
+  - ft_services
 
-libasm
-
-minishell
-
-push_swap
+  - libasm
+  - minishell
+  - push_swap
 
 <p align="center">
 EXAM RANK 03
 </p>
 
 	LEVEL 4
-cpp
-
-philosophers
+  - cpp
+  - philosophers
 
 <p align="center">
 EXAM RANK 04
 </p>
 
 	LEVEL 5
-ft_containers
+  - ft_containers
+  - ft_irc
+  - webserv
 
-ft_irc
-
-webserv
 <p align="center">
 EXAM RANK 05
 </p>
 
 	LEVEL 06
-ft_transcendence 
+  - ft_transcendence 
 
 <p align="center">
 EXAM RANK 06
