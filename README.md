@@ -18,8 +18,9 @@ netwhat
 cub3d
 
 ft_server
-
-#### EXAM RANK 02
+<p align="center">
+EXAM RANK 02
+</p>
 
 	LEVEL 3
 ft_services
@@ -30,14 +31,18 @@ minishell
 
 push_swap
 
-#### EXAM RANK 03
+<p align="center">
+EXAM RANK 03
+</p>
 
 	LEVEL 4
 cpp
 
 philosophers
 
-#### EXAM RANK 04
+<p align="center">
+EXAM RANK 04
+</p>
 
 	LEVEL 5
 ft_containers
@@ -45,10 +50,13 @@ ft_containers
 ft_irc
 
 webserv
-
-#### EXAM RANK 05
+<p align="center">
+EXAM RANK 05
+</p>
 
 	LEVEL 06
 ft_transcendence 
 
-#### EXAM RANK 06
+<p align="center">
+EXAM RANK 06
+</p>
