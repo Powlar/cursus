@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cedmulle <cedmulle@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/02 11:01:59 by cedmulle          #+#    #+#             */
-/*   Updated: 2023/10/05 15:19:35 by cedmulle         ###   ########.fr       */
+/*   Created: 2023/10/05 14:47:20 by cedmulle          #+#    #+#             */
+/*   Updated: 2023/10/05 15:31:18 by cedmulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,61 +14,28 @@
 
 /* ************************************************************************** */
 /*                                                                            */
-/*   Fonctionnement : Convertit un entier en une chaîne de caractères.        */
+/*   Fonctionnement : Crée un nouvel élément de liste avec la donnée passée   */
+/*   en argument.                                                             */
 /*                                                                            */
-/*   Paramètre :                                                              */
-/*      - n : L'entier à convertir                                            */
+/*   Paramètres :                                                             */
+/*      - content : La donnée à stocker dans le nouvel élément de liste.      */
 /*                                                                            */
 /*   Retour :                                                                 */
-/*      - Un pointeur vers une nouvelle chaîne de caractères représentant n.  */
-/*      - NULL en cas d'échec d'allocation mémoire.                           */
+/*      - Un pointeur vers le nouvel élément de liste créé.                   */
+/*      - NULL en cas d'échec d'allocation de mémoire.                        */
 /*                                                                            */
 /*   Si échec :                                                               */
-/*      La fonction renvoie NULL en cas d'échec d'allocation mémoire.         */
+/*      La fonction renvoie NULL en cas d'échec d'allocation de mémoire.      */
 /*                                                                            */
 /* *****************************************************************   by.XVI */
-static unsigned int	ft_intlen(int number)
+t_list	*ft_lstnew(void *content)
 {
-	unsigned int	len;
+	t_list	*new_lst;
 
-	len = 0;
-	if (number == 0)
-		return (1);
-	if (number < 0)
-		len += 1;
-	while (number != 0)
-	{
-		number /= 10;
-		len++;
-	}
-	return (len);
-}
-
-char	*ft_itoa(int n)
-{
-	char			*result;
-	unsigned int	number;
-	unsigned int	size;
-
-	size = ft_intlen(n);
-	result = (char *)malloc(sizeof(char) * (size) + 1);
-	if (!result)
+	new_lst = (t_list *) malloc(sizeof(t_list));
+	if (!new_lst)
 		return (NULL);
-	if (n < 0)
-	{
-		result[0] = '-';
-		number = -n;
-	}
-	else
-		number = n;
-	if (number == 0)
-		result[0] = '0';
-	result[size] = '\0';
-	while (number != 0)
-	{
-		result[size - 1] = (number % 10) + '0';
-		number = number / 10;
-		size--;
-	}
-	return (result);
+	new_lst->content = content;
+	new_lst->next = NULL;
+	return (new_lst);
 }

@@ -6,7 +6,7 @@
 /*   By: cedmulle <cedmulle@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/30 15:32:36 by cedmulle          #+#    #+#             */
-/*   Updated: 2023/10/04 11:45:50 by cedmulle         ###   ########.fr       */
+/*   Updated: 2023/10/05 15:22:45 by cedmulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,15 @@
 # include <unistd.h>
 # include <string.h>
 # include <stdlib.h>
+/*****************************************************************************/
+/* 							Structs pour partie bonus						 */
+/*****************************************************************************/
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}					t_list;
+
 /*****************************************************************************/
 /* 								Fonctions seules							 */
 /*****************************************************************************/
@@ -64,6 +73,10 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+/*****************************************************************************/
+/* 								Fonctions Bonus								 */
+/*****************************************************************************/
+t_list	*ft_lstnew(void *content);
 
 #endif
 
