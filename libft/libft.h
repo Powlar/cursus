@@ -6,7 +6,7 @@
 /*   By: cedmulle <cedmulle@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/30 15:32:36 by cedmulle          #+#    #+#             */
-/*   Updated: 2023/10/06 10:34:44 by cedmulle         ###   ########.fr       */
+/*   Updated: 2023/10/06 11:19:16 by cedmulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,6 +80,7 @@ t_list	*ft_lstnew(void *content);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 int		ft_lstsize(t_list *lst);
 t_list	*ft_lstlast(t_list *lst);
+void	ft_lstadd_back(t_list **lst, t_list *new);
 
 #endif
 
@@ -301,4 +302,13 @@ t_list	*ft_lstlast(t_list *lst);
 /*   en parcourant la liste jusqu'à ce que le pointeur vers le prochain       */
 /*   élément soit NULL.                                                       */
 /*                                                                            */
+/* ************************************************************************** */
+/*                                                                            */
+/*   Nom de la Ft : ft_lstadd_back                                           */
+/*   Fonctionnement : Ajoute un élément à la fin de la liste en utilisant la  */
+/*   fonction ft_lstlast pour trouver le dernier élément, puis en changeant   */
+/*   le pointeur next du dernier élément pour le faire pointer vers le nouvel */
+/*   élément.                                                                 */
+/*                                                                            */
 /* *****************************************************************   by.XVI */
+
