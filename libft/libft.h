@@ -6,7 +6,7 @@
 /*   By: cedmulle <cedmulle@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/30 15:32:36 by cedmulle          #+#    #+#             */
-/*   Updated: 2023/10/05 15:36:51 by cedmulle         ###   ########.fr       */
+/*   Updated: 2023/10/06 10:34:44 by cedmulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,6 +77,9 @@ void	ft_putnbr_fd(int n, int fd);
 /* 								Fonctions Bonus								 */
 /*****************************************************************************/
 t_list	*ft_lstnew(void *content);
+void	ft_lstadd_front(t_list **lst, t_list *new);
+int		ft_lstsize(t_list *lst);
+t_list	*ft_lstlast(t_list *lst);
 
 #endif
 
@@ -271,5 +274,31 @@ t_list	*ft_lstnew(void *content);
 /*   Nom de la Ft : ft_toupper                                                */
 /*   Fonctionnement : Convertit un caractère majuscule en caractère minuscule */
 /*   si c'est une lettre majuscule.                                           */
+/*                                                                            */
+/* ************************************************************************** */
+/*                                                                            */
+/*   Nom de la Ft : ft_lstnew                                                 */
+/*   Fonctionnement : Crée un nouvel élément de liste avec la donnée passée   */
+/*   en argument.                                                             */
+/*                                                                            */
+/* ************************************************************************** */
+/*                                                                            */
+/*   Nom de la Ft : ft_lstadd_front                                           */
+/*   Fonctionnement : Ajoute un nouvel élément au début de la liste. Le       */
+/*   pointeur *lst pointe vers le premier élément de la liste, et new est le  */
+/*   nouvel élément à ajouter.                                                */
+/*                                                                            */
+/* ************************************************************************** */
+/*                                                                            */
+/*   Nom de la Ft : ft_lstsize                                                */
+/*   Fonctionnement : Calcule la taille de la liste en comptant le nombre     */
+/*   d'éléments qu'elle contient.                                             */
+/*                                                                            */
+/* ************************************************************************** */
+/*                                                                            */
+/*   Nom de la Ft : ft_lstlast                                               */
+/*   Fonctionnement : Renvoie un pointeur vers le dernier élément de la liste */
+/*   en parcourant la liste jusqu'à ce que le pointeur vers le prochain       */
+/*   élément soit NULL.                                                       */
 /*                                                                            */
 /* *****************************************************************   by.XVI */
