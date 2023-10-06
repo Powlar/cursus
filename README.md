@@ -5,7 +5,7 @@
 ```
 LEVEL 0
 ```
-- [x] [libft](./libft)
+- [x] [libft](./libft) (bonuses in progress...)
 
 ```
 LEVEL 1
