@@ -212,7 +212,7 @@ En résumé, cet exercice vise à développer les compétences suivantes :
 > *Que vous débutiez dans le projet "libft" ou que vous souhaitiez approfondir vos connaissances sur la gestion de bibliothèques en C, cette rubrique vous guidera à travers les règles clés du Makefile et leur fonctionnement. Elle vous fournira également les outils nécessaires pour travailler efficacement avec votre bibliothèque "libft" tout au long de votre parcours au cursus 42.*
 
 <br>
-`$(NAME)` Cette règle génère la bibliothèque statique libft.a, qui contiendra toutes les fonctions de la librairie. Elle est créée en utilisant la commande `ar -rcs`, qui rassemble tous les fichiers objets (.o) en un fichier de bibliothèque. Les fichiers objets nécessaires sont spécifiés après `$(NAME)`.
+`\$\(NAME\)` Cette règle génère la bibliothèque statique libft.a, qui contiendra toutes les fonctions de la librairie. Elle est créée en utilisant la commande `ar -rcs`, qui rassemble tous les fichiers objets (.o) en un fichier de bibliothèque. Les fichiers objets nécessaires sont spécifiés après `$(NAME)`.
 
 `all`Cible par défaut du Makefile. Lorsque vous exécutez simplement `make`, elle appelle la règle `$(NAME)` pour créer la bibliothèque libft.a.
 
