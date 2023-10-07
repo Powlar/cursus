@@ -282,6 +282,22 @@ Commentez vos prototypes de fonctions pour expliquer brièvement ce que fait cha
 
 - - -
 
+# Liens utiles
+
+## Liens Github
+[Norminette 42](https://github.com/42School/norminette) <br>
+Norminette 42 pour le Terminal. <br><br>
+[Francinette](https://github.com/xicodomingues/francinette) <br>
+Programme de differents tests des modules du Cursus 42. <br><br>
+
+## Extensions VSCode
+[42_ft_line_counter](https://marketplace.visualstudio.com/items?itemName=DoKca.42-ft-count-line) <br>
+Compteur de lignes par fonction (utile pour la Norminette). <br><br>
+[42_header](https://marketplace.visualstudio.com/items?itemName=kube.42header) <br>
+Header de l'ecole 42. <br><br>
+[Norminette 42](https://marketplace.visualstudio.com/items?itemName=dalexhd.42-norminette) <br>
+Norminette non-officielle pour VSCode. <br><br>
+
 # Conclusion
 
 Le projet "libft" du cursus 42 est un excellent moyen d'améliorer vos compétences en programmation en C et de comprendre les bases de la création d'une bibliothèque. Voici quelques conseils pour vous aider à réussir ce projet :
