@@ -1,15 +1,19 @@
 # Table des Matieres
-[Introduction](#chapitre-1--introduction)
-<br>
-[Fonctions Abordees](#chapitre-2--les-fonctions-abordees)
-<br>
-[Makefile](#chapitre-3--le-makefile)
-<br>
-[Liens Utiles](#liens-utiles)
-<br>
-[La Librairie](#chapitre-4--la-librairie-h)
+* [Introduction](#chapitre-1--introduction)
+
+* [Fonctions Abordees](#chapitre-2--les-fonctions-abordees)
+
+* [Makefile](#chapitre-3--le-makefile)
+
+* [Liens Utiles](#liens-utiles)
+
+* [La Librairie](#chapitre-4--la-librairie-h)
+
+- - -
 
 # Chapitre 1 : Introduction
+
+<br>
 
 ## Description de l'exercice
 
@@ -24,6 +28,8 @@ En résumé, cet exercice vise à développer les compétences suivantes :
 * Créer des fonctions personnalisées pour effectuer des opérations courantes.
 * Gérer la gestion dynamique de la mémoire.
 * Utiliser Makefile pour automatiser la compilation.
+
+<br>
 
 ## Objectif
 
@@ -68,19 +74,22 @@ En résumé, cet exercice vise à développer les compétences suivantes :
 
 * Apprentissage de la lecture de manuels de fonctions C pour comprendre leur utilisation et leurs prototypes.
 
+<br>
+<br>
+
 - - -
 
 # Chapitre 2 : Les fonctions abordees
 
+<br>
+
 ## Index des Parties :
 
-[Fonctions de Base](#fonctions-de-base-manipulation-de-caract%C3%A8res-et-de-m%C3%A9moire) (Manipulation de Caractères et de Mémoire)
+* [Fonctions de Base](#fonctions-de-base-manipulation-de-caract%C3%A8res-et-de-m%C3%A9moire) (Manipulation de Caractères et de Mémoire)
+* [Fonctions de Gestion de la Mémoire](#fonctions-de-gestion-de-m%C3%A9moire-allocation-et-lib%C3%A9ration) (Allocation et Libération)
+* [Fonctions de Manipulation de Chaînes de Caractères](#fonctions-de-manipulation-de-cha%C3%AEnes-de-caract%C3%A8res)
+* [Fonctions de Liste Chaînée (Partie Bonus)](#fonctions-de-liste-cha%C3%AEn%C3%A9e-partie-bonus)
 <br>
-[Fonctions de Gestion de la Mémoire](#fonctions-de-gestion-de-m%C3%A9moire-allocation-et-lib%C3%A9ration) (Allocation et Libération)
-<br>
-[Fonctions de Manipulation de Chaînes de Caractères](#fonctions-de-manipulation-de-cha%C3%AEnes-de-caract%C3%A8res)
-<br>
-[Fonctions de Liste Chaînée (Partie Bonus)](#fonctions-de-liste-cha%C3%AEn%C3%A9e-partie-bonus)
 
 ## Fonctions de Base (Manipulation de Caractères et de Mémoire) :
 
@@ -147,6 +156,9 @@ En résumé, cet exercice vise à développer les compétences suivantes :
 **atoi** : Convertit une chaîne de caractères en un entier.
 <br>`int ft_atoi(const char *str);`
 
+<br>
+<br>
+
 ## Fonctions de Gestion de Mémoire (Allocation et Libération) :
 
 **calloc** : Alloue et initialise un bloc de mémoire à zéro.
@@ -154,6 +166,9 @@ En résumé, cet exercice vise à développer les compétences suivantes :
 
 **strdup** : Duplique une chaîne de caractères.
 <br>`char *ft_strdup(const char *s1);`
+
+<br>
+<br>
 
 ## Fonctions de Manipulation de Chaînes de Caractères :
 
@@ -178,6 +193,9 @@ En résumé, cet exercice vise à développer les compétences suivantes :
 **striteri** : Applique une fonction à chaque caractère d'une chaîne avec son index en argument.
 <br>`void ft_striteri(char *s, void (*f)(unsigned int, char *));`
 
+<br>
+<br>
+
 ## Fonctions de Liste Chaînée (Partie Bonus) :
 
 **lstnew** : Crée un nouvel élément de liste avec la donnée passée en argument.
@@ -200,6 +218,9 @@ En résumé, cet exercice vise à développer les compétences suivantes :
 
 **lstclear** : Supprime et libère la mémoire de tous les éléments de la liste en utilisant une fonction de suppression.
 <br>`void ft_lstclear(t_list **lst, void (*del)(void *));`
+
+<br>
+<br>
 
 - - -
 
