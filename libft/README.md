@@ -9,7 +9,9 @@
 - - -
 
 # Chapitre 1 : Introduction
+
 <br>
+
 ## Description de l'exercice
 
 Le 1er chapitre du cursus 42, intitulé **Libft**, constitue une étape fondamentale dans l'apprentissage de la programmation en langage C. L'objectif principal de cet exercice est de créer une bibliothèque standard personnalisée, nommée **Libft**, qui comprendra un ensemble de fonctions couramment utilisées en programmation, mais sans utiliser les fonctions de la bibliothèque standard C comme celles présentes dans [\<string.h>](https://devdocs.io/c/string/byte) ou [\<stdlib.h>](https://devdocs.io/c/program).
@@ -25,6 +27,7 @@ En résumé, cet exercice vise à développer les compétences suivantes :
 * Utiliser Makefile pour automatiser la compilation.
 
 <br>
+
 ## Objectif
 
 *Au terme de ce Chapitre "Libft", les étudiants auront acquis un ensemble de compétences fondamentales en programmation en langage C. Voici les principales notions abordées et les compétences clés à maîtriser à la fin de ce chapitre :*
