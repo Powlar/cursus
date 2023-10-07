@@ -1,17 +1,16 @@
 # Table des Matieres
-
+<br>
 * [Introduction](#chapitre-1--introduction)
 * [Fonctions Abordees](#chapitre-2--les-fonctions-abordees)
 * [Makefile](#chapitre-3--le-makefile)
 * [Liens Utiles](#liens-utiles)
 * [La Librairie](#chapitre-4--la-librairie-h)
 
+<br>
 - - -
 
 # Chapitre 1 : Introduction
-
 <br>
-
 ## Description de l'exercice
 
 Le 1er chapitre du cursus 42, intitulé **Libft**, constitue une étape fondamentale dans l'apprentissage de la programmation en langage C. L'objectif principal de cet exercice est de créer une bibliothèque standard personnalisée, nommée **Libft**, qui comprendra un ensemble de fonctions couramment utilisées en programmation, mais sans utiliser les fonctions de la bibliothèque standard C comme celles présentes dans [\<string.h>](https://devdocs.io/c/string/byte) ou [\<stdlib.h>](https://devdocs.io/c/program).
@@ -27,7 +26,6 @@ En résumé, cet exercice vise à développer les compétences suivantes :
 * Utiliser Makefile pour automatiser la compilation.
 
 <br>
-
 ## Objectif
 
 *Au terme de ce Chapitre "Libft", les étudiants auront acquis un ensemble de compétences fondamentales en programmation en langage C. Voici les principales notions abordées et les compétences clés à maîtriser à la fin de ce chapitre :*
@@ -73,12 +71,9 @@ En résumé, cet exercice vise à développer les compétences suivantes :
 
 <br>
 <br>
-
 - - -
 
 # Chapitre 2 : Les fonctions abordees
-
-<br>
 
 ## Index des Parties :
 
@@ -88,7 +83,6 @@ En résumé, cet exercice vise à développer les compétences suivantes :
 * [Fonctions de Liste Chaînée (Partie Bonus)](#fonctions-de-liste-cha%C3%AEn%C3%A9e-partie-bonus)
 
 <br>
-
 ## Fonctions de Base (Manipulation de Caractères et de Mémoire) :
 
 **isalpha** : Vérifie si le caractère passé en argument est une lettre alphabétique.
@@ -292,8 +286,10 @@ En résumé, cet exercice vise à développer les compétences suivantes :
 <br>
 - - -
 
+<br>
+<br>
 # Chapitre 3 : Le Makefile
-
+<br>
 ## Gestion Facilitée de la Bibliothèque
 
 > *Pour faciliter la compilation, la gestion et l'utilisation de cette bibliothèque, le Makefile est un outil essentiel.*
@@ -337,10 +333,12 @@ Cette règle permet de compiler les fonctions bonus de la librairie. Elle crée 
 
 - - -
 
+<br>
+<br>
 # Chapitre 4 : La Librairie .h
 
 **Le fichier d'en-tête (.h) joue un rôle crucial pour définir l'interface de votre bibliothèque. Voici comment une bibliothèque .h fonctionne et les principes clés à prendre en compte :**
-
+<br>
 ## Inclusions Initiales :
 
 Au début du fichier d'en-tête, vous devez inclure les bibliothèques standard nécessaires pour vos fonctions. Dans le cas de "libft", cela comprend généralement des inclusions telles que :
@@ -354,11 +352,11 @@ Au début du fichier d'en-tête, vous devez inclure les bibliothèques standard 
 ```
 
 Ces directives de préprocesseur garantissent que le fichier d'en-tête est inclus une seule fois, même si plusieurs fichiers sources l'incluent.
-
+<br>
 ## Définition des Structures :
 
 Si votre bibliothèque utilise des structures personnalisées, déclarez-les dans le fichier d'en-tête. Par exemple, dans "libft", la structure `t_list` est utilisée pour gérer les listes chaînées.
-
+<br>
 ## Prototypes des Fonctions :
 
 Les prototypes des fonctions sont essentiels. Vous devez les inclure dans le fichier d'en-tête au fur et à mesure que vous implémentez de nouvelles fonctions. Ces prototypes indiquent aux utilisateurs comment utiliser vos fonctions, y compris les types d'arguments attendus et les valeurs de retour.
@@ -370,11 +368,11 @@ void *ft_memset(void *b, int c, size_t len);
 char *ft_strdup(const char *s1);
 // ... et ainsi de suite pour chaque fonction
 ```
-
+<br>
 ## Mise à Jour Régulière :
 
 Chaque fois que vous ajoutez ou modifiez une fonction dans votre bibliothèque, assurez-vous de mettre à jour le fichier d'en-tête en conséquence. Cela garantit que les utilisateurs ont accès aux dernières définitions et prototypes.
-
+<br>
 ## Utilisation de Commentaires :
 
 Commentez vos prototypes de fonctions pour expliquer brièvement ce que fait chaque fonction. Les commentaires aident les utilisateurs à comprendre rapidement l'objectif de chaque fonction.
@@ -383,6 +381,8 @@ Commentez vos prototypes de fonctions pour expliquer brièvement ce que fait cha
 
 - - -
 
+<br>
+<br>
 # Liens utiles
 
 ## Liens Github
@@ -405,46 +405,46 @@ Header de l'ecole 42.
 Norminette non-officielle pour VSCode.
 <br>
 # Conclusion
-
+<br>
 Le projet "libft" du cursus 42 est un excellent moyen d'améliorer vos compétences en programmation en C et de comprendre les bases de la création d'une bibliothèque. Voici quelques conseils pour vous aider à réussir ce projet :
-
+<br>
 ##### Comprenez l'Énoncé
 
 Avant de commencer, prenez le temps de bien comprendre l'énoncé du projet. Assurez-vous de connaître les objectifs et les attentes de chaque partie du projet.
-
+<br>
 ##### Organisez Votre Travail
 
 Divisez le projet en étapes plus petites et organisez-vous. Créez un plan de travail pour vous assurer de ne rien oublier et de suivre une progression régulière.
-
+<br>
 ##### Documentez Votre Code
 
 Une documentation claire et concise est essentielle. Commentez vos fonctions de manière à ce que leur utilisation soit facilement compréhensible par d'autres développeurs.
-
+<br>
 ##### Testez Rigoureusement
 
 Écrivez des tests unitaires pour chaque fonction que vous implémentez. Cela vous permettra de vous assurer que vos fonctions fonctionnent correctement et de détecter rapidement les erreurs.
-
+<br>
 ##### Respectez les Normes
 
 Suivez strictement les normes de programmation de la 42. Veillez à respecter les conventions de nommage, les règles de formatage du code, et à éviter les fuites de mémoire.
-
+<br>
 ##### Utilisez Git
 
 Utilisez Git pour gérer votre code source. Commitez régulièrement et assurez-vous de conserver un historique propre de vos modifications.
-
+<br>
 ##### Demandez de l'Aide
 
 Avant tout : **RTFM** !
 Puis, n'hésitez pas à demander de l'aide à vos airs, à des tuteurs ou à la communauté en ligne de la 42 si vous rencontrez des difficultés. C'est une excellente ressource pour résoudre des problèmes.
-
+<br>
 ##### Restez Organisé
 
 Gardez une structure de répertoire propre et organisée pour votre projet. Cela facilitera la gestion des fichiers et le suivi de votre progression.
-
+<br>
 ##### Soyez Patient
 
 Le projet "libft" peut être complexe, surtout si c'est votre première expérience avec la création d'une bibliothèque. Soyez patient avec vous-même et prenez le temps de comprendre chaque concept.
-
+<br>
 ##### Apprenez de Vos Erreurs
 
 Ne craignez pas de faire des erreurs, car elles sont une occasion d'apprendre. Analysez les erreurs que vous rencontrez et cherchez à les corriger.
