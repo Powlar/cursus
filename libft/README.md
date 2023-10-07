@@ -327,4 +327,6 @@ Le projet "libft" peut être complexe, surtout si c'est votre première expérie
 
 Ne craignez pas de faire des erreurs, car elles sont une occasion d'apprendre. Analysez les erreurs que vous rencontrez et cherchez à les corriger.
 <br>
+<br>
+<br>
 **En suivant ces conseils pratiques, vous serez bien équipé pour réussir le projet "libft" et acquérir des compétences précieuses en programmation en C. N'oubliez pas que la persévérance est la clé de la réussite, alors restez motivé et continuez à progresser dans votre apprentissage.**
