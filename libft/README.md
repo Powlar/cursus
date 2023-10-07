@@ -213,23 +213,25 @@ En résumé, cet exercice vise à développer les compétences suivantes :
 
 <br>
 
-`$(NAME)` Cette règle génère la bibliothèque statique libft.a, qui contiendra toutes les fonctions de la librairie. Elle est créée en utilisant la commande `ar -rcs`, qui rassemble tous les fichiers objets (.o) en un fichier de bibliothèque. Les fichiers objets nécessaires sont spécifiés après `$(NAME)`.
+`$(NAME)` 
+<br>Cette règle génère la bibliothèque statique libft.a, qui contiendra toutes les fonctions de la librairie. Elle est créée en utilisant la commande `ar -rcs`, qui rassemble tous les fichiers objets (.o) en un fichier de bibliothèque. Les fichiers objets nécessaires sont spécifiés après `$(NAME)`.<br>
 
 `all`
-Cible par défaut du Makefile. Lorsque vous exécutez simplement `make`, elle appelle la règle `$(NAME)` pour créer la bibliothèque libft.a.
-
+<br>Cible par défaut du Makefile. Lorsque vous exécutez simplement `make`, elle appelle la règle `$(NAME)` pour créer la bibliothèque libft.a.
+<br>
 `clean`
-Supprime tous les fichiers objets (.o) générés lors de la compilation. Cela nettoie le répertoire du projet des fichiers temporaires.
+<br>Supprime tous les fichiers objets (.o) générés lors de la compilation. Cela nettoie le répertoire du projet des fichiers temporaires.<br>
 
 `fclean`
-Supprime tous les fichiers générés lors de la compilation, y compris la bibliothèque libft.a. Elle appelle également la règle `clean`pour supprimer les fichiers objets. En conséquence, `fclean` effectue un nettoyage complet du projet.
+<br>Supprime tous les fichiers générés lors de la compilation, y compris la bibliothèque libft.a. Elle appelle également la règle `clean`pour supprimer les fichiers objets. En conséquence, `fclean` effectue un nettoyage complet du projet.<br>
 
 `re`
-Cette règle est une combinaison de `fclean` suivi de `all`. Elle supprime d'abord tous les fichiers générés, puis recompile la librairie à partir de zéro en appelant `all`. C'est utile lorsque vous souhaitez reconstruire la librairie depuis le début.
+<br>Cette règle est une combinaison de `fclean` suivi de `all`. Elle supprime d'abord tous les fichiers générés, puis recompile la librairie à partir de zéro en appelant `all`. C'est utile lorsque vous souhaitez reconstruire la librairie depuis le début.<br>
 
 `bonus`
-Cette règle permet de compiler les fonctions bonus de la librairie. Elle crée une bibliothèque libft.a contenant toutes les fonctions (y compris les bonus) en utilisant les fichiers objets correspondants.
-<br>
+<br>Cette règle permet de compiler les fonctions bonus de la librairie. Elle crée une bibliothèque libft.a contenant toutes les fonctions (y compris les bonus) en utilisant les fichiers objets correspondants.<br>
+
+
 > Ces règles sont essentielles pour la gestion de votre projet, notamment pour la compilation, la création de la bibliothèque et le nettoyage du répertoire de travail. Vous pouvez les invoquer en utilisant la commande make suivie du nom de la règle (par exemple, `make all`, `make clean`, `make re`, etc.).
 
 - - -
