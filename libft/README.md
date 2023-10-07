@@ -1,20 +1,15 @@
 # Table des Matieres
+
 * [Introduction](#chapitre-1--introduction)
-
 * [Fonctions Abordees](#chapitre-2--les-fonctions-abordees)
-
 * [Makefile](#chapitre-3--le-makefile)
-
 * [Liens Utiles](#liens-utiles)
-
 * [La Librairie](#chapitre-4--la-librairie-h)
 
 - - -
 
 # Chapitre 1 : Introduction
-
 <br>
-
 ## Description de l'exercice
 
 Le 1er chapitre du cursus 42, intitulé **Libft**, constitue une étape fondamentale dans l'apprentissage de la programmation en langage C. L'objectif principal de cet exercice est de créer une bibliothèque standard personnalisée, nommée **Libft**, qui comprendra un ensemble de fonctions couramment utilisées en programmation, mais sans utiliser les fonctions de la bibliothèque standard C comme celles présentes dans [\<string.h>](https://devdocs.io/c/string/byte) ou [\<stdlib.h>](https://devdocs.io/c/program).
@@ -30,7 +25,6 @@ En résumé, cet exercice vise à développer les compétences suivantes :
 * Utiliser Makefile pour automatiser la compilation.
 
 <br>
-
 ## Objectif
 
 *Au terme de ce Chapitre "Libft", les étudiants auront acquis un ensemble de compétences fondamentales en programmation en langage C. Voici les principales notions abordées et les compétences clés à maîtriser à la fin de ce chapitre :*
@@ -76,152 +70,218 @@ En résumé, cet exercice vise à développer les compétences suivantes :
 
 <br>
 <br>
-
 - - -
 
 # Chapitre 2 : Les fonctions abordees
-
 <br>
-
 ## Index des Parties :
 
 * [Fonctions de Base](#fonctions-de-base-manipulation-de-caract%C3%A8res-et-de-m%C3%A9moire) (Manipulation de Caractères et de Mémoire)
 * [Fonctions de Gestion de la Mémoire](#fonctions-de-gestion-de-m%C3%A9moire-allocation-et-lib%C3%A9ration) (Allocation et Libération)
 * [Fonctions de Manipulation de Chaînes de Caractères](#fonctions-de-manipulation-de-cha%C3%AEnes-de-caract%C3%A8res)
 * [Fonctions de Liste Chaînée (Partie Bonus)](#fonctions-de-liste-cha%C3%AEn%C3%A9e-partie-bonus)
-<br>
 
 ## Fonctions de Base (Manipulation de Caractères et de Mémoire) :
 
 **isalpha** : Vérifie si le caractère passé en argument est une lettre alphabétique.
-<br>`int ft_isalpha(int c);`
 
+`int ft_isalpha(int c);`
+
+<br>
 **isdigit** : Vérifie si le caractère passé en argument est un chiffre décimal.
-<br>`int ft_isdigit(int c);`
 
+`int ft_isdigit(int c);`
+
+<br>
 **isalnum** : Vérifie si le caractère passé en argument est un caractère alphanumérique.
-<br>`int ft_isalnum(int c);`
 
+`int ft_isalnum(int c);`
+
+<br>
 **isascii** : Vérifie si le caractère passé en argument est un caractère ASCII.
-<br>`int ft_isascii(int c);`
 
+`int ft_isascii(int c);`
+
+<br>
 **isprint** : Vérifie si le caractère passé en argument est un caractère imprimable.
-<br>`int ft_isprint(int c);`
 
+`int ft_isprint(int c);`
+
+<br>
 **strlen** : Calcule la longueur d'une chaîne de caractères.
-<br>`size_t ft_strlen(const char *s);`
 
+`size_t ft_strlen(const char *s);`
+
+<br>
 **memset** : Remplit une zone mémoire avec une valeur donnée.
-<br>`void *ft_memset(void *b, int c, size_t len);`
 
+`void *ft_memset(void *b, int c, size_t len);`
+
+<br>
 **bzero** : Remplit les premiers octets de la mémoire pointée par `s` avec l'octet nul (valeur 0).
-<br>`void ft_bzero(void *s, size_t n);`
 
+`void ft_bzero(void *s, size_t n);`
+
+<br>
 **memcpy** : Copie une zone mémoire source dans une zone mémoire destination.
-<br>`void *ft_memcpy(void *dst, const void *src, size_t n);`
 
+`void *ft_memcpy(void *dst, const void *src, size_t n);`
+
+<br>
 **memmove** : Copie une zone mémoire source dans une zone mémoire destination, même si elles se chevauchent.
-<br>`void *ft_memmove(void *dst, const void *src, size_t len);`
 
+`void *ft_memmove(void *dst, const void *src, size_t len);`
+
+<br>
 **strlcpy** : Copie une chaîne de caractères dans une autre en limitant la taille de destination.
-<br>`size_t ft_strlcpy(char *dst, const char *src, size_t dstsize);`
 
+`size_t ft_strlcpy(char *dst, const char *src, size_t dstsize);`
+
+<br>
 **strlcat** : Concatène deux chaînes de caractères en limitant la taille du résultat.
-<br>`size_t ft_strlcat(char *dest, const char *src, size_t dstsize);`
 
+`size_t ft_strlcat(char *dest, const char *src, size_t dstsize);`
+
+<br>
 **toupper** : Convertit un caractère minuscule en caractère majuscule si c'est une lettre minuscule.
-<br>`int ft_toupper(int c);`
 
+`int ft_toupper(int c);`
+
+<br>
 **tolower** : Convertit un caractère majuscule en caractère minuscule si c'est une lettre majuscule.
-<br>`int ft_tolower(int c);`
 
+`int ft_tolower(int c);`
+
+<br>
 **strchr** : Recherche la première occurrence d'un caractère dans une chaîne de caractères.
-<br>`char *ft_strchr(const char *s, int c);`
 
+`char *ft_strchr(const char *s, int c);`
+
+<br>
 **strrchr** : Recherche la dernière occurrence d'un caractère dans une chaîne de caractères.
-<br>`char *ft_strrchr(const char *s, int c);`
 
+`char *ft_strrchr(const char *s, int c);`
+
+<br>
 **strncmp** : Compare les n premiers caractères de deux chaînes de caractères.
-<br>`int ft_strncmp(const char *s1, const char *s2, size_t n);`
 
+`int ft_strncmp(const char *s1, const char *s2, size_t n);`
+
+<br>
 **memchr** : Recherche une valeur dans une zone mémoire.
-<br>`void *ft_memchr(const void *s, int c, size_t n);`
 
+`void *ft_memchr(const void *s, int c, size_t n);`
+
+<br>
 **memcmp** : Compare les n premiers octets de deux zones mémoire.
-<br>`int ft_memcmp(const void *s1, const void *s2, size_t n);`
 
+`int ft_memcmp(const void *s1, const void *s2, size_t n);`
+
+<br>
 **strnstr** : Recherche une sous-chaîne dans une chaîne avec une limite de longueur.
-<br>`char *ft_strnstr(const char *haystack, const char *needle, size_t len);`
 
+`char *ft_strnstr(const char *haystack, const char *needle, size_t len);`
+
+<br>
 **atoi** : Convertit une chaîne de caractères en un entier.
-<br>`int ft_atoi(const char *str);`
+
+`int ft_atoi(const char *str);`
 
 <br>
 <br>
-
+<br>
 ## Fonctions de Gestion de Mémoire (Allocation et Libération) :
 
 **calloc** : Alloue et initialise un bloc de mémoire à zéro.
-<br>`void *ft_calloc(size_t count, size_t size);`
 
+`void *ft_calloc(size_t count, size_t size);`
+
+<br>
 **strdup** : Duplique une chaîne de caractères.
-<br>`char *ft_strdup(const char *s1);`
+
+`char *ft_strdup(const char *s1);`
 
 <br>
 <br>
-
+<br>
 ## Fonctions de Manipulation de Chaînes de Caractères :
 
 **substr** : Extrait une sous-chaîne d'une chaîne de caractères.
-<br>`char *ft_substr(char const *s, unsigned int start, size_t len);`
 
+`char *ft_substr(char const *s, unsigned int start, size_t len);`
+
+<br>
 **strjoin** : Concatène deux chaînes de caractères.
-<br>`char *ft_strjoin(char const *s1, char const *s2);`
 
+`char *ft_strjoin(char const *s1, char const *s2);`
+
+<br>
 **strtrim** : Supprime les caractères spécifiés en début et en fin d'une chaîne de caractères.
-<br>`char *ft_strtrim(char const *s1, char const *set);`
 
+`char *ft_strtrim(char const *s1, char const *set);`
+
+<br>
 **split** : Divise une chaîne de caractères en mots en utilisant un caractère délimiteur.
-<br>`char **ft_split(char const *s, char c);`
 
+`char **ft_split(char const *s, char c);`
+
+<br>
 **itoa** : Convertit un entier en chaîne de caractères.
-<br>`char *ft_itoa(int n);`
 
+`char *ft_itoa(int n);`
+
+<br>
 **strmapi** : Applique une fonction à chaque caractère d'une chaîne avec son index en argument.
-<br>`char *ft_strmapi(char const *s, char (*f)(unsigned int, char));`
 
+`char *ft_strmapi(char const *s, char (*f)(unsigned int, char));`
+
+<br>
 **striteri** : Applique une fonction à chaque caractère d'une chaîne avec son index en argument.
-<br>`void ft_striteri(char *s, void (*f)(unsigned int, char *));`
+
+`void ft_striteri(char *s, void (*f)(unsigned int, char *));`
 
 <br>
 <br>
-
+<br>
 ## Fonctions de Liste Chaînée (Partie Bonus) :
 
 **lstnew** : Crée un nouvel élément de liste avec la donnée passée en argument.
-<br>`t_list *ft_lstnew(void *content);`
 
+`t_list *ft_lstnew(void *content);`
+
+<br>
 **lstadd\_front** : Ajoute un nouvel élément au début de la liste.
-<br>`void ft_lstadd_front(t_list **lst, t_list *new);`
 
+`void ft_lstadd_front(t_list **lst, t_list *new);`
+
+<br>
 **lstsize** : Calcule la taille de la liste en comptant le nombre d'éléments.
-<br>`int ft_lstsize(t_list *lst);`
 
+`int ft_lstsize(t_list *lst);`
+
+<br>
 **lstlast** : Renvoie un pointeur vers le dernier élément de la liste.
-<br>`t_list *ft_lstlast(t_list *lst);`
 
+`t_list *ft_lstlast(t_list *lst);`
+
+<br>
 **lstadd\_back** : Ajoute un élément à la fin de la liste chaînée.
-<br>`void ft_lstadd_back(t_list **lst, t_list *new);`
 
+`void ft_lstadd_back(t_list **lst, t_list *new);`
+
+<br>
 **lstdelone** : Supprime un élément de la liste sans supprimer la structure de données qu'il contenait.
-<br>`void ft_lstdelone(t_list *lst, void (*del)(void *));`
 
+`void ft_lstdelone(t_list *lst, void (*del)(void *));`
+
+<br>
 **lstclear** : Supprime et libère la mémoire de tous les éléments de la liste en utilisant une fonction de suppression.
-<br>`void ft_lstclear(t_list **lst, void (*del)(void *));`
+
+`void ft_lstclear(t_list **lst, void (*del)(void *));`
 
 <br>
 <br>
-
+<br>
 - - -
 
 # Chapitre 3 : Le Makefile
@@ -235,26 +295,36 @@ En résumé, cet exercice vise à développer les compétences suivantes :
 > *Que vous débutiez dans le projet "libft" ou que vous souhaitiez approfondir vos connaissances sur la gestion de bibliothèques en C, cette rubrique vous guidera à travers les règles clés du Makefile et leur fonctionnement. Elle vous fournira également les outils nécessaires pour travailler efficacement avec votre bibliothèque "libft" tout au long de votre parcours au cursus 42.*
 
 <br>
+<br>
+`$(NAME)`
 
-`$(NAME)` 
-<br>Cette règle génère la bibliothèque statique libft.a, qui contiendra toutes les fonctions de la librairie. Elle est créée en utilisant la commande `ar -rcs`, qui rassemble tous les fichiers objets (.o) en un fichier de bibliothèque. Les fichiers objets nécessaires sont spécifiés après `$(NAME)`.<br>
+Cette règle génère la bibliothèque statique libft.a, qui contiendra toutes les fonctions de la librairie. Elle est créée en utilisant la commande `ar -rcs`, qui rassemble tous les fichiers objets (.o) en un fichier de bibliothèque. Les fichiers objets nécessaires sont spécifiés après `$(NAME)`.
 
+<br>
 `all`
-<br>Cible par défaut du Makefile. Lorsque vous exécutez simplement `make`, elle appelle la règle `$(NAME)` pour créer la bibliothèque libft.a.<br>
 
+Cible par défaut du Makefile. Lorsque vous exécutez simplement `make`, elle appelle la règle `$(NAME)` pour créer la bibliothèque libft.a.
+
+<br>
 `clean`
-<br>Supprime tous les fichiers objets (.o) générés lors de la compilation. Cela nettoie le répertoire du projet des fichiers temporaires.<br>
 
+Supprime tous les fichiers objets (.o) générés lors de la compilation. Cela nettoie le répertoire du projet des fichiers temporaires.
+
+<br>
 `fclean`
-<br>Supprime tous les fichiers générés lors de la compilation, y compris la bibliothèque libft.a. Elle appelle également la règle `clean`pour supprimer les fichiers objets. En conséquence, `fclean` effectue un nettoyage complet du projet.<br>
 
+Supprime tous les fichiers générés lors de la compilation, y compris la bibliothèque libft.a. Elle appelle également la règle `clean`pour supprimer les fichiers objets. En conséquence, `fclean` effectue un nettoyage complet du projet.
+
+<br>
 `re`
-<br>Cette règle est une combinaison de `fclean` suivi de `all`. Elle supprime d'abord tous les fichiers générés, puis recompile la librairie à partir de zéro en appelant `all`. C'est utile lorsque vous souhaitez reconstruire la librairie depuis le début.<br>
 
+Cette règle est une combinaison de `fclean` suivi de `all`. Elle supprime d'abord tous les fichiers générés, puis recompile la librairie à partir de zéro en appelant `all`. C'est utile lorsque vous souhaitez reconstruire la librairie depuis le début.
+
+<br>
 `bonus`
-<br>Cette règle permet de compiler les fonctions bonus de la librairie. Elle crée une bibliothèque libft.a contenant toutes les fonctions (y compris les bonus) en utilisant les fichiers objets correspondants.<br>
 
-
+Cette règle permet de compiler les fonctions bonus de la librairie. Elle crée une bibliothèque libft.a contenant toutes les fonctions (y compris les bonus) en utilisant les fichiers objets correspondants.
+<br>
 > Ces règles sont essentielles pour la gestion de votre projet, notamment pour la compilation, la création de la bibliothèque et le nettoyage du répertoire de travail. Vous pouvez les invoquer en utilisant la commande make suivie du nom de la règle (par exemple, `make all`, `make clean`, `make re`, etc.).
 
 - - -
@@ -308,19 +378,24 @@ Commentez vos prototypes de fonctions pour expliquer brièvement ce que fait cha
 # Liens utiles
 
 ## Liens Github
-[Norminette 42](https://github.com/42School/norminette) <br>
-Norminette 42 pour le Terminal. <br><br>
-[Francinette](https://github.com/xicodomingues/francinette) <br>
-Programme de differents tests des modules du Cursus 42. <br><br>
 
+[Norminette 42](https://github.com/42School/norminette)
+Norminette 42 pour le Terminal.
+
+[Francinette](https://github.com/xicodomingues/francinette)
+Programme de differents tests des modules du Cursus 42.
+<br>
 ## Extensions VSCode
-[42_ft_line_counter](https://marketplace.visualstudio.com/items?itemName=DoKca.42-ft-count-line) <br>
-Compteur de lignes par fonction (utile pour la Norminette). <br><br>
-[42_header](https://marketplace.visualstudio.com/items?itemName=kube.42header) <br>
-Header de l'ecole 42. <br><br>
-[Norminette 42](https://marketplace.visualstudio.com/items?itemName=dalexhd.42-norminette) <br>
-Norminette non-officielle pour VSCode. <br><br>
 
+[42\_ft\_line\_counter](https://marketplace.visualstudio.com/items?itemName=DoKca.42-ft-count-line)
+Compteur de lignes par fonction (utile pour la Norminette).
+
+[42\_header](https://marketplace.visualstudio.com/items?itemName=kube.42header)
+Header de l'ecole 42.
+
+[Norminette 42](https://marketplace.visualstudio.com/items?itemName=dalexhd.42-norminette)
+Norminette non-officielle pour VSCode.
+<br>
 # Conclusion
 
 Le projet "libft" du cursus 42 est un excellent moyen d'améliorer vos compétences en programmation en C et de comprendre les bases de la création d'une bibliothèque. Voici quelques conseils pour vous aider à réussir ce projet :
@@ -351,7 +426,7 @@ Utilisez Git pour gérer votre code source. Commitez régulièrement et assurez-
 
 ##### Demandez de l'Aide
 
-Avant tout :  **RTFM**  !
+Avant tout : **RTFM** !
 Puis, n'hésitez pas à demander de l'aide à vos airs, à des tuteurs ou à la communauté en ligne de la 42 si vous rencontrez des difficultés. C'est une excellente ressource pour résoudre des problèmes.
 
 ##### Restez Organisé
@@ -365,7 +440,7 @@ Le projet "libft" peut être complexe, surtout si c'est votre première expérie
 ##### Apprenez de Vos Erreurs
 
 Ne craignez pas de faire des erreurs, car elles sont une occasion d'apprendre. Analysez les erreurs que vous rencontrez et cherchez à les corriger.
-<br>
+
 <br>
 <br>
 **En suivant ces conseils pratiques, vous serez bien équipé pour réussir le projet "libft" et acquérir des compétences précieuses en programmation en C. N'oubliez pas que la persévérance est la clé de la réussite, alors restez motivé et continuez à progresser dans votre apprentissage.**
