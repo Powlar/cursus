@@ -74,6 +74,7 @@ En résumé, cet exercice vise à développer les compétences suivantes :
 
 # Chapitre 2 : Les fonctions abordees
 <br>
+
 ## Index des Parties :
 
 * [Fonctions de Base](#fonctions-de-base-manipulation-de-caract%C3%A8res-et-de-m%C3%A9moire) (Manipulation de Caractères et de Mémoire)
