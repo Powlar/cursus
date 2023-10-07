@@ -217,8 +217,8 @@ En résumé, cet exercice vise à développer les compétences suivantes :
 <br>Cette règle génère la bibliothèque statique libft.a, qui contiendra toutes les fonctions de la librairie. Elle est créée en utilisant la commande `ar -rcs`, qui rassemble tous les fichiers objets (.o) en un fichier de bibliothèque. Les fichiers objets nécessaires sont spécifiés après `$(NAME)`.<br>
 
 `all`
-<br>Cible par défaut du Makefile. Lorsque vous exécutez simplement `make`, elle appelle la règle `$(NAME)` pour créer la bibliothèque libft.a.
-<br>
+<br>Cible par défaut du Makefile. Lorsque vous exécutez simplement `make`, elle appelle la règle `$(NAME)` pour créer la bibliothèque libft.a.<br>
+
 `clean`
 <br>Supprime tous les fichiers objets (.o) générés lors de la compilation. Cela nettoie le répertoire du projet des fichiers temporaires.<br>
 
