@@ -73,8 +73,11 @@ En résumé, cet exercice vise à développer les compétences suivantes :
 ## Index des Parties :
 
 [Fonctions de Base](#fonctions-de-base-manipulation-de-caract%C3%A8res-et-de-m%C3%A9moire) (Manipulation de Caractères et de Mémoire)
+<br>
 [Fonctions de Gestion de la Mémoire](#fonctions-de-gestion-de-m%C3%A9moire-allocation-et-lib%C3%A9ration) (Allocation et Libération)
+<br>
 [Fonctions de Manipulation de Chaînes de Caractères](#fonctions-de-manipulation-de-cha%C3%AEnes-de-caract%C3%A8res)
+<br>
 [Fonctions de Liste Chaînée (Partie Bonus)](#fonctions-de-liste-cha%C3%AEn%C3%A9e-partie-bonus)
 
 ## Fonctions de Base (Manipulation de Caractères et de Mémoire) :
