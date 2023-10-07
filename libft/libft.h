@@ -6,7 +6,7 @@
 /*   By: cedmulle <cedmulle@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/30 15:32:36 by cedmulle          #+#    #+#             */
-/*   Updated: 2023/10/07 10:15:26 by cedmulle         ###   ########.fr       */
+/*   Updated: 2023/10/07 12:26:01 by cedmulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -316,12 +316,6 @@ void	ft_lstclear(t_list **lst, void (*del)(void *));
 /*   Nom de la Ft : ft_lstdelone                                              */
 /*   Fonctionnement : Supprime un élément de la liste sans supprimer la       */
 /*   structure de donnée qu'il contenait.                                     */
-/*                                                                            */
-/* ************************************************************************** */
-/*                                                                            */
-/*   Nom de la Ft : ft_lstclear                                               */
-/*   Fonctionnement : Supprime et libère la mémoire de tous les éléments de   */
-/*   la liste en utilisant la fonction de suppression 'del'.                  */
 /*                                                                            */
 /* ************************************************************************** */
 /*                                                                            */
