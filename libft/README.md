@@ -83,121 +83,121 @@ En résumé, cet exercice vise à développer les compétences suivantes :
 ## Fonctions de Base (Manipulation de Caractères et de Mémoire) :
 
 **isalpha** : Vérifie si le caractère passé en argument est une lettre alphabétique.
-`int ft_isalpha(int c);`
+<br>`int ft_isalpha(int c);`
 
 **isdigit** : Vérifie si le caractère passé en argument est un chiffre décimal.
-`int ft_isdigit(int c);`
+<br>`int ft_isdigit(int c);`
 
 **isalnum** : Vérifie si le caractère passé en argument est un caractère alphanumérique.
-`int ft_isalnum(int c);`
+<br>`int ft_isalnum(int c);`
 
 **isascii** : Vérifie si le caractère passé en argument est un caractère ASCII.
-`int ft_isascii(int c);`
+<br>`int ft_isascii(int c);`
 
 **isprint** : Vérifie si le caractère passé en argument est un caractère imprimable.
-`int ft_isprint(int c);`
+<br>`int ft_isprint(int c);`
 
 **strlen** : Calcule la longueur d'une chaîne de caractères.
-`size_t ft_strlen(const char *s);`
+<br>`size_t ft_strlen(const char *s);`
 
 **memset** : Remplit une zone mémoire avec une valeur donnée.
-`void *ft_memset(void *b, int c, size_t len);`
+<br>`void *ft_memset(void *b, int c, size_t len);`
 
 **bzero** : Remplit les premiers octets de la mémoire pointée par `s` avec l'octet nul (valeur 0).
-`void ft_bzero(void *s, size_t n);`
+<br>`void ft_bzero(void *s, size_t n);`
 
 **memcpy** : Copie une zone mémoire source dans une zone mémoire destination.
-`void *ft_memcpy(void *dst, const void *src, size_t n);`
+<br>`void *ft_memcpy(void *dst, const void *src, size_t n);`
 
 **memmove** : Copie une zone mémoire source dans une zone mémoire destination, même si elles se chevauchent.
-`void *ft_memmove(void *dst, const void *src, size_t len);`
+<br>`void *ft_memmove(void *dst, const void *src, size_t len);`
 
 **strlcpy** : Copie une chaîne de caractères dans une autre en limitant la taille de destination.
-`size_t ft_strlcpy(char *dst, const char *src, size_t dstsize);`
+<br>`size_t ft_strlcpy(char *dst, const char *src, size_t dstsize);`
 
 **strlcat** : Concatène deux chaînes de caractères en limitant la taille du résultat.
-`size_t ft_strlcat(char *dest, const char *src, size_t dstsize);`
+<br>`size_t ft_strlcat(char *dest, const char *src, size_t dstsize);`
 
 **toupper** : Convertit un caractère minuscule en caractère majuscule si c'est une lettre minuscule.
-`int ft_toupper(int c);`
+<br>`int ft_toupper(int c);`
 
 **tolower** : Convertit un caractère majuscule en caractère minuscule si c'est une lettre majuscule.
-`int ft_tolower(int c);`
+<br>`int ft_tolower(int c);`
 
 **strchr** : Recherche la première occurrence d'un caractère dans une chaîne de caractères.
-`char *ft_strchr(const char *s, int c);`
+<br>`char *ft_strchr(const char *s, int c);`
 
 **strrchr** : Recherche la dernière occurrence d'un caractère dans une chaîne de caractères.
-`char *ft_strrchr(const char *s, int c);`
+<br>`char *ft_strrchr(const char *s, int c);`
 
 **strncmp** : Compare les n premiers caractères de deux chaînes de caractères.
-`int ft_strncmp(const char *s1, const char *s2, size_t n);`
+<br>`int ft_strncmp(const char *s1, const char *s2, size_t n);`
 
 **memchr** : Recherche une valeur dans une zone mémoire.
-`void *ft_memchr(const void *s, int c, size_t n);`
+<br>`void *ft_memchr(const void *s, int c, size_t n);`
 
 **memcmp** : Compare les n premiers octets de deux zones mémoire.
-`int ft_memcmp(const void *s1, const void *s2, size_t n);`
+<br>`int ft_memcmp(const void *s1, const void *s2, size_t n);`
 
 **strnstr** : Recherche une sous-chaîne dans une chaîne avec une limite de longueur.
-`char *ft_strnstr(const char *haystack, const char *needle, size_t len);`
+<br>`char *ft_strnstr(const char *haystack, const char *needle, size_t len);`
 
 **atoi** : Convertit une chaîne de caractères en un entier.
-`int ft_atoi(const char *str);`
+<br>`int ft_atoi(const char *str);`
 
 ## Fonctions de Gestion de Mémoire (Allocation et Libération) :
 
 **calloc** : Alloue et initialise un bloc de mémoire à zéro.
-`void *ft_calloc(size_t count, size_t size);`
+<br>`void *ft_calloc(size_t count, size_t size);`
 
 **strdup** : Duplique une chaîne de caractères.
-`char *ft_strdup(const char *s1);`
+<br>`char *ft_strdup(const char *s1);`
 
 ## Fonctions de Manipulation de Chaînes de Caractères :
 
 **substr** : Extrait une sous-chaîne d'une chaîne de caractères.
-`char *ft_substr(char const *s, unsigned int start, size_t len);`
+<br>`char *ft_substr(char const *s, unsigned int start, size_t len);`
 
 **strjoin** : Concatène deux chaînes de caractères.
-`char *ft_strjoin(char const *s1, char const *s2);`
+<br>`char *ft_strjoin(char const *s1, char const *s2);`
 
 **strtrim** : Supprime les caractères spécifiés en début et en fin d'une chaîne de caractères.
-`char *ft_strtrim(char const *s1, char const *set);`
+<br>`char *ft_strtrim(char const *s1, char const *set);`
 
 **split** : Divise une chaîne de caractères en mots en utilisant un caractère délimiteur.
-`char **ft_split(char const *s, char c);`
+<br>`char **ft_split(char const *s, char c);`
 
 **itoa** : Convertit un entier en chaîne de caractères.
-`char *ft_itoa(int n);`
+<br>`char *ft_itoa(int n);`
 
 **strmapi** : Applique une fonction à chaque caractère d'une chaîne avec son index en argument.
-`char *ft_strmapi(char const *s, char (*f)(unsigned int, char));`
+<br>`char *ft_strmapi(char const *s, char (*f)(unsigned int, char));`
 
 **striteri** : Applique une fonction à chaque caractère d'une chaîne avec son index en argument.
-`void ft_striteri(char *s, void (*f)(unsigned int, char *));`
+<br>`void ft_striteri(char *s, void (*f)(unsigned int, char *));`
 
 ## Fonctions de Liste Chaînée (Partie Bonus) :
 
 **lstnew** : Crée un nouvel élément de liste avec la donnée passée en argument.
-`t_list *ft_lstnew(void *content);`
+<br>`t_list *ft_lstnew(void *content);`
 
 **lstadd\_front** : Ajoute un nouvel élément au début de la liste.
-`void ft_lstadd_front(t_list **lst, t_list *new);`
+<br>`void ft_lstadd_front(t_list **lst, t_list *new);`
 
 **lstsize** : Calcule la taille de la liste en comptant le nombre d'éléments.
-`int ft_lstsize(t_list *lst);`
+<br>`int ft_lstsize(t_list *lst);`
 
 **lstlast** : Renvoie un pointeur vers le dernier élément de la liste.
-`t_list *ft_lstlast(t_list *lst);`
+<br>`t_list *ft_lstlast(t_list *lst);`
 
 **lstadd\_back** : Ajoute un élément à la fin de la liste chaînée.
-`void ft_lstadd_back(t_list **lst, t_list *new);`
+<br>`void ft_lstadd_back(t_list **lst, t_list *new);`
 
 **lstdelone** : Supprime un élément de la liste sans supprimer la structure de données qu'il contenait.
-`void ft_lstdelone(t_list *lst, void (*del)(void *));`
+<br>`void ft_lstdelone(t_list *lst, void (*del)(void *));`
 
 **lstclear** : Supprime et libère la mémoire de tous les éléments de la liste en utilisant une fonction de suppression.
-`void ft_lstclear(t_list **lst, void (*del)(void *));`
+<br>`void ft_lstclear(t_list **lst, void (*del)(void *));`
 
 - - -
 
