@@ -1,4 +1,4 @@
-<img title = "42_libft" alt="42_libft" src="./logo.png">
+<img title = "42_libft" alt="42_libft" src="./logo.png" justify="center">
 
 # Table des Matieres
 
