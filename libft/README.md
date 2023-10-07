@@ -1,16 +1,12 @@
 # Table des Matieres
 [Introduction](#chapitre-1--introduction)
 <br>
-
 [Fonctions Abordees](#chapitre-2--les-fonctions-abordees)
 <br>
-
 [Makefile](#chapitre-3--le-makefile)
 <br>
-
 [Liens Utiles](#liens-utiles)
 <br>
-
 [La Librairie](#chapitre-4--la-librairie-h)
 
 # Chapitre 1 : Introduction
