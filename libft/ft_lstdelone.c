@@ -1,42 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: cedmulle <cedmulle@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/06 11:00:27 by cedmulle          #+#    #+#             */
-/*   Updated: 2023/10/07 09:46:34 by cedmulle         ###   ########.fr       */
+/*   Created: 2023/10/07 09:51:07 by cedmulle          #+#    #+#             */
+/*   Updated: 2023/10/07 12:12:02 by cedmulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
 /* ************************************************************************** */
 /*                                                                            */
-/*   Fonctionnement : Ajoute un élément à la fin de la liste chaînée en       */
-/*   parcourant la liste jusqu'à ce que le dernier élément soit trouvé, puis  */
-/*   relie le dernier élément au nouvel élément. Si la liste est vide, le     */
-/*   nouvel élément devient la première et la dernière entrée.                */
+/*   Fonctionnement : Supprime un élément de la liste sans supprimer la       */
+/*   structure de donnée qu'il contenait.                                     */
 /*                                                                            */
 /*   Paramètres :                                                             */
-/*      - lst : Un pointeur vers un pointeur du premier élément de la liste.  */
-/*      - new : Un pointeur vers l'élément à ajouter à la fin de la liste.    */
+/*      - lst : L'élément de liste à supprimer.                               */
+/*      - del : La fonction à utiliser pour supprimer le contenu de lst.      */
 /*                                                                            */
 /*   Retour :                                                                 */
-/*      Aucun (la liste est modifiée directement).                            */
+/*      Aucun (la fonction ne renvoie rien).                                  */
 /*                                                                            */
 /*   Si échec :                                                               */
 /*      Aucun (la fonction ne renvoie rien en cas d'échec).                   */
 /*                                                                            */
 /* *****************************************************************   by.XVI */
-void	ft_lstadd_back(t_list **lst, t_list *new)
+void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	t_list	*endlst;
-
-	endlst = ft_lstlast(*lst);
-	if (endlst)
-		endlst->next = new;
-	else
-		*lst = new;
+	del(lst->content);
+	free(lst);
 }

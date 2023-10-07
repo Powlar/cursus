@@ -6,7 +6,7 @@
 /*   By: cedmulle <cedmulle@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/30 15:32:36 by cedmulle          #+#    #+#             */
-/*   Updated: 2023/10/06 11:19:16 by cedmulle         ###   ########.fr       */
+/*   Updated: 2023/10/07 10:15:26 by cedmulle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,6 @@ typedef struct s_list
 	void			*content;
 	struct s_list	*next;
 }					t_list;
-
 /*****************************************************************************/
 /* 								Fonctions seules							 */
 /*****************************************************************************/
@@ -81,6 +80,8 @@ void	ft_lstadd_front(t_list **lst, t_list *new);
 int		ft_lstsize(t_list *lst);
 t_list	*ft_lstlast(t_list *lst);
 void	ft_lstadd_back(t_list **lst, t_list *new);
+void	ft_lstdelone(t_list *lst, void (*del)(void *));
+void	ft_lstclear(t_list **lst, void (*del)(void *));
 
 #endif
 
@@ -297,18 +298,35 @@ void	ft_lstadd_back(t_list **lst, t_list *new);
 /*                                                                            */
 /* ************************************************************************** */
 /*                                                                            */
-/*   Nom de la Ft : ft_lstlast                                               */
+/*   Nom de la Ft : ft_lstlast                                                */
 /*   Fonctionnement : Renvoie un pointeur vers le dernier élément de la liste */
 /*   en parcourant la liste jusqu'à ce que le pointeur vers le prochain       */
 /*   élément soit NULL.                                                       */
 /*                                                                            */
 /* ************************************************************************** */
 /*                                                                            */
-/*   Nom de la Ft : ft_lstadd_back                                           */
-/*   Fonctionnement : Ajoute un élément à la fin de la liste en utilisant la  */
-/*   fonction ft_lstlast pour trouver le dernier élément, puis en changeant   */
-/*   le pointeur next du dernier élément pour le faire pointer vers le nouvel */
-/*   élément.                                                                 */
+/*   Nom de la Ft : ft_lstadd_back                                            */
+/*   Fonctionnement : Ajoute un élément à la fin de la liste chaînée en       */
+/*   parcourant la liste jusqu'à ce que le dernier élément soit trouvé, puis  */
+/*   relie le dernier élément au nouvel élément. Si la liste est vide, le     */
+/*   nouvel élément devient la première et la dernière entrée.                */
+/*                                                                            */
+/* ************************************************************************** */
+/*                                                                            */
+/*   Nom de la Ft : ft_lstdelone                                              */
+/*   Fonctionnement : Supprime un élément de la liste sans supprimer la       */
+/*   structure de donnée qu'il contenait.                                     */
+/*                                                                            */
+/* ************************************************************************** */
+/*                                                                            */
+/*   Nom de la Ft : ft_lstclear                                               */
+/*   Fonctionnement : Supprime et libère la mémoire de tous les éléments de   */
+/*   la liste en utilisant la fonction de suppression 'del'.                  */
+/*                                                                            */
+/* ************************************************************************** */
+/*                                                                            */
+/*   Nom de la Ft : ft_lstclear                                               */
+/*   Fonctionnement : Supprime et libère la mémoire de tous les éléments de   */
+/*   la liste en utilisant la fonction de suppression 'del'.                  */
 /*                                                                            */
 /* *****************************************************************   by.XVI */
-
